@@ -1,0 +1,3 @@
+@echo off
+echo Demarrage du site client Chez OSI (Port 3001)...
+npm run dev
