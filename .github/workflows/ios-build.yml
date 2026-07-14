@@ -25,6 +25,9 @@ jobs:
 
       - name: 🏗️ Build Web Assets (Next.js)
         run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://fchaqztuduvxzhfmygbl.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZjaGFxenR1ZHV2eHpoZm15Z2JsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM5NDE5NjcsImV4cCI6MjA5OTUxNzk2N30.xkmVLt9zutS2Ajg_tZebauB5VTiZEVbVzAHDFKrxuiA
 
       - name: 🔄 Sync Capacitor iOS
         run: npx cap sync ios
